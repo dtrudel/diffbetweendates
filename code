@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class DiffBetweenDates {
+	 public static void main (String args[]){
+
+	        Scanner in = new Scanner(System.in);
+
+	        int day1;
+	        int month1;
+	        int year1;
+
+	        System.out.println("Enter the first date now: ");
+	        System.out.print("Enter month: \n");
+	       month1=in.nextInt();
+	        System.out.print("Enter day: \n");
+	        day1=in.nextInt();
+	        System.out.print("Enter year: \n");
+	        year1=in.nextInt();
+
+
+	        System.out.printf("The first date is: %d/%d/%d\n",month1,day1,year1);
+
+	        int day2;
+            int month2;
+            int year2;
+
+	        System.out.println("Enter the other date now: ");
+	        System.out.print("Enter month: \n");
+	        month2=in.nextInt();
+	        System.out.print("Enter day: \n");
+	        day2=in.nextInt();
+	        System.out.print("Enter year: \n");
+	        year2=in.nextInt();
+	       
+	
+	        System.out.printf("The other date is: %d/%d/%d\n",month2,day2,year2);
+
+	        int numDays=(Math.abs(day1-day2));
+	        int nummonths=(Math.abs(month1-month2));
+int numyears=(Math.abs(year1-year2));
+	        System.out.printf("That's a difference of %d months and %d days and %d years",nummonths,numDays,numyears);
+
+	    }
+	}
+
